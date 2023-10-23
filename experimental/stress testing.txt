@@ -1,0 +1,10 @@
+##install stress testing firm
+sudo apt-get install stress-ng
+
+
+##to run stress test
+stress-ng --cpu 0 --cpu-method fft
+
+
+##to measure temps
+vcgencmd measure_temp

@@ -1,0 +1,29 @@
+###temperature monitor
+
+
+##create a script
+nano temp_mon.sh
+
+
+
+
+##code for the script
+
+interval=5
+while true; do
+    temperature=$(vcgencmd measure_temp)
+    echo "$(date) - $temperature"
+    sleep $interval
+done
+
+
+
+
+##make the script executable
+chmod +x temp_mon.sh
+
+
+
+
+##run the script
+./temp_mon.sh
