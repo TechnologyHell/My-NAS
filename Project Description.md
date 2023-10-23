@@ -1,0 +1,49 @@
+Raspberry Pi 4-based Network Attached Storage (NAS) and Media Server
+
+
+Project Overview : 
+The Raspberry Pi 4-based Network Attached Storage (NAS) and Media Server is a versatile solution that combines the power of a Raspberry Pi 4, a SATA SSD, and custom software configurations to create a centralized storage and media sharing system. This project allows you to access and share files, act as a media server, and even serve as a backup server while ensuring remote access from anywhere in the world.
+
+
+Hardware Components
+1.	Raspberry Pi 4
+2.	SATA SSD
+3.	Network Router
+4.	Power Supply for Raspberry Pi
+5.	Ethernet Cable
+
+
+Software Components
+1.	Raspberry Pi Legacy OS
+2.	Open-SSH for remote access
+3.	SAMBA FTP Server for file sharing
+4.	Port Forwarding for remote access
+
+Project Features : 
+1. Local Network Setup
+The project begins by integrating the Raspberry Pi 4 with a SATA SSD. The Raspberry Pi is connected to the local network using an Ethernet cable. This setup allows for seamless communication between devices within the home network.
+
+2. Remote Access
+To enable remote access to the NAS from anywhere in the world, port forwarding is configured on the network router. This ensures that the NAS can be accessed securely from outside the local network.
+
+3. File Sharing
+  1.	SAMBA FTP Server: The SAMBA FTP server is installed and configured on the Raspberry Pi to provide a user-friendly interface for file sharing. Users can access and manage their files on the NAS using SAMBA, making it a convenient network storage solution.
+  2.	Authorized User: A specific authorized user is created within SAMBA, enhancing security and access control.
+
+4. Media Server
+The Raspberry Pi serves as a media server, allowing you to store and stream multimedia content to various devices within your home network. This feature is ideal for creating a centralized media library accessible from smart TVs, computers, or mobile devices.
+
+5. Backup Server
+Utilizing the external storage (SATA SSD), the Raspberry Pi NAS can be used as a backup server to safeguard critical data. Automated backup routines can be set up to ensure data redundancy and recovery in case of unexpected events.
+
+
+Project Benefits  : 
+1.	Centralized Storage: A centralized storage solution simplifies file management and sharing among multiple devices in your home network.
+2.	Remote Accessibility: With port forwarding, you can access your NAS securely from anywhere, providing flexibility and convenience.
+3.	Media Streaming: Enjoy multimedia content on various devices without the need for separate media storage.
+4.	Data Backup: Protect your important data by using the NAS as a backup server, ensuring data safety and recovery.
+
+
+Conclusion  : 
+The Raspberry Pi 4-based NAS and Media Server is a versatile and cost-effective solution for enhancing file management, media sharing, and data backup capabilities. This project showcases the potential of Raspberry Pi and open-source software in creating a comprehensive network storage system that meets the needs of modern home users.
+
