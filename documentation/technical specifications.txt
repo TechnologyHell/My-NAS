@@ -1,0 +1,53 @@
+
+Technical Specifications
+
+
+Raspberry Pi 4 Model B
+•	Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.8GHz
+•	4GB LPDDR4-3200 SDRAM 
+•	2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE
+•	1000 Mbps Gigabit Ethernet Port
+•	40 pin GPIO Header
+•	Micro SD Card slot
+•	5V DC USB Type C
+
+
+Power Supply 
+•	AC 100-240V 50/60Hz Input
+•	DC 5.1V 3A Output
+•	15.3W maximum output power
+•	1.5m 18AWG captive cable
+•	USB-C output connector
+
+
+Primary Storage (Operating System)
+•	SanDisk Ultra microSDXC UHS-I Card
+•	Capacity – 64GB
+•	Transmission Speed – Up to 140MB/s
+•	Class 10
+
+
+
+
+Secondary Storage (Storage for NAS)
+•	Ant Esports 690 Neo SATA Solid State Drive
+•	Interface – SATA III
+•	Connectivity Speed – 6Gb/s
+•	Read/Write Speed – 520/450 MB/s
+
+SATA to USB 3.0 (Connector for SSD)
+•	Interface – SATA III to USB 3.0
+•	Transfer Speeds – Up to 5Gbps
+•	Supports UASP
+
+Networking
+•	Asus RT AC 51U Dual Band Router
+•	1GBPS LAN Support
+•	CAT-5E Ethernet Cable
+
+Case
+•	Black Compact ABS Case with Cooling Fan Slot
+•	40 mm Cooling Fan (5v 0.2A)
+•	Aluminium Heat Sink
+
+
