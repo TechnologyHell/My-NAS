@@ -1,0 +1,67 @@
+###to access the raspberry pi from a network device
+ssh pi@192.168.1.4
+
+	The authenticity of host '192.168.0.143 (192.168.0.143)' can't be established.
+	ED25519 key fingerprint is SHA256:YD5xhGyw1BROG3V7XWhr3etUxlp0xOgfr/vU/jffi0s.
+	This key is not known by any other names
+	Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+	Warning: Permanently added '192.168.0.143' (ED25519) to the list of known hosts.
+	pi@192.168.1.4's password:
+	Linux PiNAS 5.10.103-v8+ #1529 SMP PREEMPT Tue Mar 8 12:26:46 GMT 2022 aarch64
+
+
+###to update existing software, applications and firmware
+sudo apt-get update
+sudp apt-get upgrade
+
+
+###installing samba ftp server
+sudo apt install samba
+
+
+###create a folder in home directory to share later
+mkdir /home/pi/NEO
+
+
+###edit the smb.conf file and add necessary details for FTP
+sudo nano /etc/samba/smb.conf
+	[NAS Server]
+	comment = NAS on Pi
+	path = /home/pi/NEO
+	read only = no
+	browsable = yes
+
+
+###restart samba service
+sudo service smbd restart
+
+
+###creating user account for file accessing from other devices
+sudo smbpasswd -a root
+
+
+###list connected disks
+sudo fdisk -l
+
+
+###mount selected disk to folder that was created to share
+sudo mount -t ntfs-3g -o rw dev/sda1 /home/pi/NEO
+
+
+###reboot the pi
+sudo reboot
+
+
+###edit the fstab file so that the external storage gets automatically mounted on reboot
+sudo nano /etc/fstab
+	/dev/sda1    /home/pi/NAS    ntfs-3g    defaults,nofail    0    0
+
+
+###enable auto mount
+sudo mount -a
+
+
+###restart the pi
+sudo reboot
+
+
